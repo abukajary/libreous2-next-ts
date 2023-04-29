@@ -9,7 +9,7 @@ import {
 } from "react-icons/gi";
 
 import { FaGlobeAsia } from "react-icons/fa";
-import { WiAlien } from "react-icons/Wi";
+// import { WiAlien } from "react-icons/Wi";
 
 import CategoryBox from "@/app/ui/CategoryBox";
 import Container from "../Container";
@@ -23,7 +23,7 @@ export const categories = [
   },
   {
     label: "Mystery",
-    icon: WiAlien,
+    icon: GiOrbit,
     description:
       "Fiction that follows a crime (like a murder or a disappearance) from the moment it is committed to the moment it is solved",
   },
