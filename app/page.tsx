@@ -29,7 +29,7 @@ const Home = async () => {
           "
       >
         {listings.map((listing: any) => (
-          <div>{listing.title}</div>
+          <div key={listing.id}>{listing.title}</div>
         ))}
       </div>
     </Container>
