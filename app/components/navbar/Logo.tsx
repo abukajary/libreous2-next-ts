@@ -8,7 +8,7 @@ const Logo = () => {
 
   return (
     <h1
-      className="hidden md:block cursor-pointer text-lg italic line-clamp-1"
+      className="cursor-pointer text-lg italic line-clamp-1"
       onClick={() => {
         router.push("/");
       }}
