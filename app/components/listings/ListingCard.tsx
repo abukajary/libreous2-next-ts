@@ -5,6 +5,7 @@ import { useCallback, useMemo } from "react";
 import { SafeListing, SafeUser } from "@/app/types";
 
 import Button from "../Button";
+import HeartButton from "@/app/ui/HeartButton";
 
 interface ListingCardProps {
   data: SafeListing;
@@ -21,6 +22,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
   disabled,
   actionLabel,
   actionId = "",
+  currentUser,
 }) => {
   const router = useRouter();
 
@@ -74,7 +76,9 @@ const ListingCard: React.FC<ListingCardProps> = ({
             top-3
             right-3
           "
-          ></div>
+          >
+            <HeartButton listingId={data.id} currentUser={currentUser} />
+          </div>
         </div>
         <div className="flex font-semibold">{data.title}</div>
         <div className="font-light text-neutral-500">{data.category}</div>
