@@ -40,7 +40,6 @@ const ListingCard: React.FC<ListingCardProps> = ({
   const price = useMemo(() => {
     return data.price;
   }, [data.price]);
-
   return (
     <div
       onClick={() => router.push(`/listings/${data.id}`)}
@@ -67,7 +66,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
               transition
             "
             src={data.imageSrc}
-            alt="Listing"
+            alt={data.title}
           />
           <div
             className="
@@ -77,10 +76,10 @@ const ListingCard: React.FC<ListingCardProps> = ({
           "
           ></div>
         </div>
-        <div className="flex font-semibold  ">{data.title}</div>
+        <div className="flex font-semibold">{data.title}</div>
         <div className="font-light text-neutral-500">{data.category}</div>
         <div className="flex flex-row items-center gap-1">
-          <div className="font-semibold">$ {price}</div>
+          <div className="font-semibold">{price} ₸</div>
         </div>
         {onAction && actionLabel && (
           <Button

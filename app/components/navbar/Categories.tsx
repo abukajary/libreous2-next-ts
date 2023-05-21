@@ -40,12 +40,18 @@ export const categories = [
       "Novels of a certain length, released under a common imprint at regular intervals",
   },
   {
-    label: "Westerns",
+    label: "Western",
     icon: GiWesternHat,
     description: "Stories that take place in the American Old West",
   },
   {
     label: "Contemporary",
+    icon: FaGlobeAsia,
+    description:
+      "Realistic fiction creates imaginary characters and situations that depict our world and society",
+  },
+  {
+    label: "not found category",
     icon: FaGlobeAsia,
     description:
       "Realistic fiction creates imaginary characters and situations that depict our world and society",

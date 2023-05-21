@@ -17,7 +17,7 @@ const Search = () => {
       "
     >
       <div className="flex flex-row items-center justify-between">
-        <div className="text-sm font-semibold px-6">by bookname</div>
+        <div className="text-sm font-semibold px-6 whitespace-nowrap">by bookname</div>
         <div className="hidden sm:block text-sm font-semibold px-6 border-x-[1px] flex-1 text-center">
           by author
         </div>
